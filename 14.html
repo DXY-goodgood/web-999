@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>dxy</title>
+		<style>
+			p{
+				color: black;
+				font-family: STSong;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" id="tx" value="">
+		<button onclick="ctrlc()">复制</button>
+		<input type="text" id="b"><br>
+		<p id="a"></p>
+		<script>
+			function ctrlc(){
+				var content = document.getElementById("tx").value;
+				document.getElementById("b").value=content;
+				document.getElementById("a").innerHTML="复制成功";
+			}
+		</script>
+	</body>
+</html>
